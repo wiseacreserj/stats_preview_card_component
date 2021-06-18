@@ -98,3 +98,31 @@ body {
     font-size: 0.75rem;
     margin-top: 30px;
 }
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 1100px;
+        margin: 90px auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 450px;
+    }
+
+    .image-container {
+        order: 2;
+        min-width: 540px;
+        height: auto;
+        background-image: url(./images/image-header-desktop.jpg);
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
