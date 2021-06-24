@@ -10,6 +10,9 @@ html {
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 100vh;
     background-color: hsl(233, 47%, 7%);
@@ -119,10 +122,41 @@ body {
         min-width: 540px;
         height: auto;
         background-image: url(./images/image-header-desktop.jpg);
+        border-radius: 0 10px 10px 0;
+    }
+
+    .image-container::after {
+        border-radius: 0 10px 10px 0;
     }
 
     .text-container {
         display: flex;
         flex-direction: column;
+        max-height: 450px;
+        padding: 40px 80px 40px 40px;
+    }
+
+    .text {
+        text-align: left;
+    }
+
+    .main-text {
+        font-size: 2.4rem;
+    }
+
+    .description-text {
+        margin-top: 20px;
+        font-size: 1.1rem;
+    }
+    .stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .stats-text {
+        font-size: 0.9rem;
     }
 }
